@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Przekierowanie HTTP na HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Przekierowanie index.html na główną stronę "/"
+    RewriteCond %{THE_REQUEST} /index\.html [NC]
+    RewriteRule ^index\.html$ / [L,R=301]
+    
+    # Obsługa SPA - przekierowanie wszystkich zapytań do index.html, jeśli plik lub katalog nie istnieje
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ /index.html [L]
+</IfModule>

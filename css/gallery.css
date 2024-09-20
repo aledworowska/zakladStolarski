@@ -1,0 +1,116 @@
+/* Gallery container */
+#index-gallery-drzwi{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    "img9 img10 img11 img12"
+    "img13 img14 img15 img16"
+    "img17 img18 img19 img20"
+    "img21 img22 . .";
+}
+#index-gallery-okna{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "img1 img2 img3 img4"
+    "img5 img6 img3 img7"
+    "img8 img9 img10 img11"
+    "img8 img12 img13 img14";
+    min-height: 50vh;
+}
+#index-gallery-inne{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "img1 img2 img3 img4"
+}
+#index-gallery-renowacja{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr  1fr;
+    grid-template-rows: auto;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "gallery-p  gallery-p "
+    "img1 .";
+}
+#index-gallery-renowacja .text {
+    width: 72vw;
+    text-align: center;
+  }
+.gallery-img{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#index-kontakt p{
+    grid-area: gallery-p;
+}
+p {
+    font-size: 3.3vw;
+    font-weight: bold;
+    grid-area: gallery-p;
+}
+
+
+/* Popup window*/
+.img-window{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.img-window img{
+    max-width: 80vw;
+    max-height: 80vh;
+}
+#img-btn{
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #383838;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+    cursor: pointer;
+}
+.img-loader {
+    display: block;
+    position: fixed;
+    top: 48vh;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 3px solid #5a6f7d;
+    animation: spin 1s linear infinite;
+    z-index: 9999;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

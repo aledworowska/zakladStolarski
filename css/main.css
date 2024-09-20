@@ -1,0 +1,229 @@
+body{
+    background-color: rgb(216, 205, 195);
+    font-family:Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /*display: flex;
+    flex-direction: column;*/
+}
+#main-page{
+    /*background-color: rgb(42, 150, 127);*/
+    padding: 0 0 7vh 0;
+}
+.footer{
+    background-color: #ded3ca;
+    margin-top: auto;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+.footer .text{
+    text-align: center;
+    width: 30vw;
+    font-size: small;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.wrapper-gallery{
+    margin: 0vw 10vw;
+}
+.wrapper-gallery .text{
+    font-size: large;
+    text-align: center;
+    margin: auto;
+    padding: 7vh;
+    width: 60vw;
+    font-weight: lighter;
+}
+.page_header{
+    margin: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page_header#oNas{
+    background-image: url("../img/renowacja/img1.jpg");
+}
+.page_header#drzwi{
+    background-image: url("../img/drzwi/img7.jpg");
+}
+.page_header#okna{
+    background-image: url("../img/okna/img6.jpg");
+}
+.page_header#schody{
+    background-image: url("../img/schody/img14.jpg");
+}
+.page_header#renowacja{
+    background-image: url("../img/renowacja/img1.jpg");
+}
+.page_header#kontakt{
+    background-image: url("../img/inne/img1.jpg");
+}
+.page_header#inne{
+    background-image: url("../img/inne/img1.jpg");
+}
+.page_header p{
+    margin: 0;
+    align-items: center;
+    padding: 8vh 15vw;
+    color: #d8cdc3;
+}
+.oferta_container{
+    width: 90%;
+    display: grid;
+    margin: 7vh auto 10vh auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+    text-align: center;
+    font-size: 3vw;
+  }
+/************************************/
+
+.oferta_container .text{
+    padding: 1.4vw 0.4vw 2.4vw 0.4vw;
+    width: 99%;
+    grid-area: unset;
+    font-size: 1.5vw;
+    font-weight: bold;
+    
+}
+.oferta_container #zabytki{
+    padding: 0.4vw 0.4vw 1.5vw 0.4vw;    
+}
+.kontakt_container{
+    width: 90%;
+    display: grid;
+    margin: 7vh auto 10vh auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    text-align: center;
+    font-size: 3vw;
+}
+.kontakt_container .text_container{
+    background-color: #e4d9cf8c;  
+    padding: 2vw 0 1.5vw 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.kontakt_container .text{
+    margin: auto;
+    padding: 0.3vw;
+    width: 20vw;
+    grid-area: unset;
+    font-size: 1vw;
+    font-weight: lighter;
+}
+.kontakt_container .title{
+    margin-top: 1.5vw;
+    font-size: 2vw;
+}
+iframe {
+    border-radius: 15px;
+    width: 100%;
+    height: 65vh;
+    border:0;
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+    mask-image: var(--svg);
+}
+.icon2 {
+    display: inline-block;
+    width: 1em;
+}
+
+#email_icon{
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z'/%3E%3C/svg%3E");
+}
+#phone_icon{
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z'/%3E%3C/svg%3E");
+}
+#location_icon{
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7'/%3E%3C/svg%3E");
+}
+
+.nav {
+    background-color: #ded3ca;
+    height: 13vh;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.home {
+    /*background-color: rgb(27, 24, 36);*/
+    display: flex;
+    flex-direction: column; /* Ustawia divy jeden pod drugim */
+    /*margin-right: 1vw;*/ /* Odstęp między lewym kontenerem a prawym divem */
+    text-align: center;
+    width: 31vw;
+    height: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.navBar {
+    flex: 1; /* Rozciąga się na całą wysokość */
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 1vw;
+    
+}
+.navBar #btn{
+    font-size: 1.0vw;
+}
+.navBar #btn a {
+    height: 100%; /* Zajmuje pełną wysokość #btn */
+    
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+}
+.navBar #btn a:hover {
+    color: rgb(175, 85, 5);
+}
+.home_btn1 {
+    /*background-color: lightcoral;*/
+    /*margin-bottom: 1vh;  Odstęp między divami */
+    font-size: 3vw;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.home_btn2 {
+   /* background-color: lightgreen;*/
+    font-size: 1.0vw;
+    display: flex;
+    justify-content: end;
+    padding-right: 1.5vw;
+    align-items: start;
+    padding-top: 0; /* Usuń dodatkowy odstęp u góry */
+    margin-top: 0; /* Usuń margines u góry, jeśli istnieje */
+    line-height: 0.5;
+}
+
+#text2 {
+    text-align: center;
+    font-size: 2.3vw;
+  }
+
+.notFound{
+    min-height: 70vh;
+}  
+.notFound h1{
+    text-align: center;
+}
